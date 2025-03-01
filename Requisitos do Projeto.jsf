@@ -1,0 +1,82 @@
+REQUISITOS DO COMPILADOR DE ASSEMBLY
+Identificar e remover comentÃ¡rios;
+Implementar o conjunto mÃ­nimo de instruÃ§Ãµes;
+* Nota mÃ­nima sobe para 8 se:
+Realizar anÃ¡lise semÃ¢ntica (quando identifica uma palavra que nÃ£o pertence ao assembly, acusar erro);
+* Nota mÃ­nima sobe para 9 se:
+Realizar anÃ¡lise sintÃ¡tica (e.g.: se uma operaÃ§Ã£o exigir dois operandos e houver apenas uma linha seguinte, acusar erro de sintaxe).
+
+---
+
+REQUISITOS DO PROCESSADOR
+
+TAMANHO DA PALAVRA
+Pelo menos 8bits.
+
+REGISTRADORES OBRIGATÃ“RIOS
+* 3 Registradores para operaÃ§Ãµes matemÃ¡ticas (operandos e resultado) - recomendado;
+* Registrador de Flags (Zero Flag, Carry Flag, Sinal, Paridade, InterrupÃ§Ã£o, DireÃ§Ã£o, Overflow).
+
+CONJUNTO MÃNIMO DE INSTRUÃ‡Ã•ES
+* MovimentaÃ§Ã£o e TransferÃªncia de Dados e ManipulaÃ§Ã£o de Bits
+MovimentaÃ§Ã£o de dados;
+ManipulaÃ§Ã£o de bit;
+Deslocamento de bit Ã  direita;
+Desclocamento de bit Ã  esquerda.
+
+* OperaÃ§Ãµes AritmÃ©ticas
+Soma;
+SubtraÃ§Ã£o;
+MultiplicaÃ§Ã£o;
+DivisÃ£o;
+Resto da divisÃ£o (mÃ³dulo).
+
+* OperaÃ§Ãµes Relacionais
+ComparaÃ§Ã£o;
+
+* OperaÃ§Ãµes LÃ³gicas
+E;
+Ou;
+NegaÃ§Ã£o;
+Ou-exclusivo;
+
+* Saltos e desvios (Nota mÃ­nima sobe para 8)
+Saltos incondicionais e retorno. E.g.: JMP, GOTO, CALL, RET do x86;
+Saltos condicionais (Se zero, se diferente de zero, se maior que, se menor que) e retono. E.g.: JZ, JZN do x86;
+
+* Outros
+Macros e Constantes;
+OperaÃ§Ãµes de I/O. E.g.: IN, OUT;
+Faze nada. E.g: NOP, HALT;
+Chamada de interrupÃ§Ã£o. E.g.: INT (Nota mÃ­nima sobe para 8).
+
+INSTRUÃ‡Ã•ES EXTRAS (OPCIONAIS)
+* OperaÃ§Ãµes AritmÃ©ticas
+Incremento;
+Decremento.
+
+* OperaÃ§Ãµes LÃ³gicas
+NÃ£o-e;
+NÃ£o-Ou;
+NÃ£o-ou-exclusivo.
+
+FUNCIONALIDADES EXTRAS (SugestÃµes)
+Nota mÃ­nima sobe para 8 (0,5 Cada) se:
+* Registradores extras: registradores de variÃ¡veis temporÃ¡rias, argumento de funÃ§Ãµes e valores de retorno, registrador de valor constante zero, registrador de operaÃ§Ãµes aritmÃ©ticas, registrador acumulador, registrador para operaÃ§Ãµes de vetores e strings, registradores de segmentos (cÃ³digos, dado, pilha) etc;
+* Pilha (nÃ£o esquecer de implementar as instruÃ§Ãµes de PUSH e POP);
+* Implementar memÃ³ria cache;
+* Implementar recursos de temporizaÃ§Ã£o;
+* Criar um mÃ³dulo externo ao processador simulando uma RAM;
+* Criar um mÃ³dulo externo ao processador simulando um teclado;
+* Criar um mÃ³dulo externo ao processador simulando um monitor;
+* Criar um controlador de DMA externo ao processador.
+Nota mÃ­nima sobe para 10 se:
+* Implementar aritmÃ©tica em ponto flutuante - nÃ£o recomendo, pode ser muito complicado;
+
+NO RELATÃ“RIO, EXPLICITAR
+Diagrama de Blocos;
+Tabela de Opcodes;
+Tabela de InterrupÃ§Ãµes: serviÃ§os de VÃ­deo (Setar modo de vÃ­deo, posiÃ§Ã£o de cursor, escrever caractere, string), serviÃ§os de disco (ler setores, escrever setores), serviÃ§os de teclado, serviÃ§os de real-time clock, etc. - Nota mÃ­nima sobe para 8;
+Tabela de ExceÃ§Ãµes (e.g.: breakpoint, instruÃ§Ã£o ilegal, address access fault, etc.) - Nota mÃ­nima sobe para 8;
+Tabela de Registradores;
+Mapa de MemÃ³ria e EndereÃ§amento.

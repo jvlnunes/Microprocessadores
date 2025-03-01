@@ -1,0 +1,12 @@
+Objetivo: Criar um bootloader e um nano kernel de um sistema operacional.
+
+Requisitos:
+Bootloader
+Sistema de arquivos com alocaÃ§Ã£o contÃ­nua
+MonousuÃ¡rio
+Monotarefa
+Sem interface grÃ¡fica (sÃ³ linha de comando)
+Capaz de reiniciar o computador
+Capaz de carregar uma aplicaÃ§Ã£o de teste
+
+Obs.: a aplicaÃ§Ã£o-teste pode ser desenvolvida em C. SugestÃ£o: um editor de texto bem simples.s
