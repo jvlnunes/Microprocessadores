@@ -15,7 +15,6 @@ class Assembler:
         self.machine_code = []
     
     def first_pass(self):
-        """Registra a posição das labels na memória."""
         address = 0
         for node in self.ast:
             if node[0] == 'LABEL':

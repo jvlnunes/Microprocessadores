@@ -1,0 +1,17 @@
+Decodificador Completo no Processador:
+
+1. Decodificador Completo no Processador:
+    Definir o formato do código de máquina.
+    Implementar a extração dos operandos e execução das instruções (fetch-decode-execute).
+    Funcionalidades Extras no Processador:
+
+2.  Funcionalidades Extras no Processador:
+    Implementar pilha, registradores extras e dispositivos de I/O.
+    Adicionar suporte a interrupções e exceções.
+    Documentação e Testes:
+
+3. Documentação e Testes:
+    Documentar a arquitetura e as tabelas exigidas.
+    Criar uma suíte de testes unitários e integrados para validar o sistema.
+
+4. Video Explicativo do projeto:
