@@ -12,7 +12,6 @@ class SemanticAnalyzer:
         self.labels = set()
     
     def check_labels(self):
-        """Armazena labels definidas no código."""
         for node in self.ast:
             if node[0] == 'LABEL':
                 self.labels.add(node[1][:-1])  # Remove ':'
